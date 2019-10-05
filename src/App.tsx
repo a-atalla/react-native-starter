@@ -1,15 +1,10 @@
 
 import React from 'react';
-import { Text, StatusBar, SafeAreaView } from 'react-native';
-import { MainWrapper } from './components/wrappers';
+import Navigator from './navigation/index';
 
 const App = () => {
   return (
-    <MainWrapper>
-      <Text >Hello</Text>
-      <Text >Hello</Text>
-      <Text >Hello</Text>
-    </MainWrapper>
+    <Navigator />
   );
 };
 
