@@ -1,16 +1,11 @@
 import React from 'react';
-import { Button } from 'react-native';
+import { HeaderRight, HeaderLeft } from '../components/header';
 
 export default (title: string = 'Default') => {
   return {
     title,
-    headerRight: (
-      <Button
-        onPress={() => alert('This is a button!')}
-        title="Info"
-        color="blue"
-      />
-    ),
+    // headerLeft: ( <HeaderLeft />),
+    headerRight: <HeaderRight />,
     headerStyle: {
       height: 150,
       backgroundColor: 'teal',
