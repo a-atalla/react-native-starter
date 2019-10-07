@@ -1,11 +1,19 @@
-
 import React from 'react';
-import Navigator from './navigation/index';
+import { Provider } from 'react-redux';
+import { PersistGate } from 'redux-persist/integration/react';
+import EStyleSheet from 'react-native-extended-stylesheet';
+import Navigator from './navigation';
+import { store, persistor } from './store';
+import theme from './theme';
 
-const App = () => {
+EStyleSheet.build(theme);
+
+export default function App() {
   return (
-    <Navigator />
+    <Provider store={store}>
+      <PersistGate loading={null} persistor={persistor}>
+        <Navigator />
+      </PersistGate>
+    </Provider>
   );
-};
-
-export default App;
+}
