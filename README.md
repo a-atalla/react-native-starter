@@ -4,4 +4,4 @@
 - [Redux Starter Kit](https://redux-starter-kit.js.org/)
 - [React Navigation](https://reactnavigation.org/)
 - [Extended StyleSheet](https://github.com/vitalets/react-native-extended-stylesheet)
-- [React Native Vicor Icons](https://github.com/oblador/react-native-vector-icons)
+- [React Native Vector Icons](https://github.com/oblador/react-native-vector-icons)
