@@ -8,5 +8,5 @@ export default {
   // COLORS
   $black: '#000',
   $red: 'red',
-  $white: '#fff'
+  $white: '#fff',
 };

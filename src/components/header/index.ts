@@ -1,7 +1,7 @@
 import HeaderRight from './header-right';
-import HeaderLeft from './header-left'
+import HeaderLeft from './header-left';
 
 export {
-    HeaderRight,
-    HeaderLeft
-}
+  HeaderRight,
+  HeaderLeft,
+};

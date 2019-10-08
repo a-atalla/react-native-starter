@@ -6,16 +6,16 @@ import DetailsScreen from '../screens/details';
 
 
 const AppNavigator = createStackNavigator({
-    Home:  {
-        screen: HomeScreen,
-        navigationOptions: getNavigationOptions('Home'),
-    },
-    Details: {
-        screen:DetailsScreen,
-        navigationOptions: getNavigationOptions('Details'),
-    },
+  Home: {
+    screen: HomeScreen,
+    navigationOptions: getNavigationOptions('Home'),
+  },
+  Details: {
+    screen: DetailsScreen,
+    navigationOptions: getNavigationOptions('Details'),
+  },
 }, {
-    initialRouteName: 'Home',
+  initialRouteName: 'Home',
 });
 
 

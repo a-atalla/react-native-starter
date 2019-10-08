@@ -5,25 +5,25 @@ import { MainWrapper } from '../../components/wrappers';
 import { actions } from '../../store';
 import styles from './styles';
 
-const HomeScreen = (props) => {
-    const { navigation, token, login } = props;
+const HomeScreen = props => {
+  const { navigation, token, login } = props;
 
-    return(
-        <MainWrapper>
-            <Text>Home Screen !!!!</Text>
-            <Text style={styles.normalText}>{ token && token }</Text>
-            <Button title="Details" onPress={() => { navigation.navigate('Details'); }}/>
-            <Button title="login"   onPress={() => { login(); }}/>
-        </MainWrapper>
-    )
-}
+  return (
+    <MainWrapper>
+      <Text>Home Screen !!!!</Text>
+      <Text style={styles.normalText}>{ token && token }</Text>
+      <Button title="Details" onPress={() => { navigation.navigate('Details'); }} />
+      <Button title="login" onPress={() => { login(); }} />
+    </MainWrapper>
+  );
+};
 
-const mapStateToProps = (state) => ({
-    token: state.user.token,
+const mapStateToProps = state => ({
+  token: state.user.token,
 });
 
-const mapDispatchToProps = (dispatch) => ({
-    login: () => { dispatch(actions.setToken()) },
+const mapDispatchToProps = dispatch => ({
+  login: () => { dispatch(actions.setToken()); },
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(HomeScreen);
